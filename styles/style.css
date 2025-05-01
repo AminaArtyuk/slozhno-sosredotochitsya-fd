@@ -251,6 +251,10 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .main-content_title {
+    min-inline-size: 236px;
+  }
+
   .main-content_one .main-content_title {
     grid-column: 1;
   }
