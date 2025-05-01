@@ -1,45 +1,43 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  font-family: var(--main-font, 'IBM Plex mono', sans-serif);
-  background-color: var(--bg-color, #000028);
+  font-family: var(--main-font, "IBM Plex mono", sans-serif);
   font-size: 18px;
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--bg-color, #000028);
+  background-attachment: fixed;
 }
 
 .header {
   position: relative;
   display: grid;
+  grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
   min-height: 668px;
-  grid-template-rows: 1fr min-content 1fr;
   padding: 10px;
-  background-image: var(--bg-image, url('../images/cover-image-dark.png'));
-  background-size: cover;
+  background-image: var(--bg-image, url("../images/cover-image-dark.png"));
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: cover;
 }
 
 .header__rec {
   position: absolute;
   top: 0;
   right: 0;
-  margin-block-start: 10px;
   margin-inline-end: 19px;
-  text-transform: uppercase;
-  line-height: 25px;
+  margin-block-start: 10px;
   color: var(--accent-color, #ff0070);
+  line-height: 25px;
+  text-transform: uppercase;
 }
 
 .header__rec::after {
-  content: '';
+  content: "";
   display: inline-block;
-  inline-size: 9px; 
-  block-size: 9px; 
-  background-color: var(--accent-color, #ff0070);
-  border-radius: 50%; 
-  margin-inline-start: 10px; 
+  margin-inline-start: 10px;
+  border-radius: 50%;
   box-shadow: 0px 0px 4px 2px var(--accent-color, #ff0070);
+  background-color: var(--accent-color, #ff0070);
+  inline-size: 9px;
+  block-size: 9px;
 }
 
 .header__theme-menu {
@@ -55,15 +53,15 @@
 }
 
 .header__theme-menu-button {
-  background-color: transparent;
-  text-transform: lowercase;
   border: none;
   color: var(--main-content_title, #ff0070);
+  line-height: 18px;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: transparent;
   cursor: pointer;
   block-size: 26px;
   inline-size: 70px;
-  text-align: center;
-  line-height: 18px;
 }
 
 .header__theme-menu-button:disabled {
@@ -83,14 +81,14 @@
 }
 
 .header_title_decor {
+  color: var(--title-color, #db00ff);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
-  color: var(--title-color, #db00ff);
 }
 
 .header_title {
-  text-shadow: 4px 4px 0 var(--title_shadow-color, #ff0070);
   grid-row: 2;
+  text-shadow: 4px 4px 0 var(--title_shadow-color, #ff0070);
 }
 
 .header_text {
@@ -101,34 +99,34 @@
 }
 
 .title-decor {
-  background-color: var(--accept-bg-color, #ff0070);
   color: var(--accept-text-color, #000028);
+  background-color: var(--accept-bg-color, #ff0070);
 }
 
 .decorated-zone::before,
 .decorated-zone::after {
-    content: '';
-    position: absolute;
-    inline-size: 25px;
-    block-size: 25px;
-    border-style: solid;
-    border-color: var(--accent-color, #ff0070);
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-color: var(--accent-color, #ff0070);
+  inline-size: 25px;
+  block-size: 25px;
 }
 
 .decorated-zone::before {
   top: 0;
   right: 0;
-  border-width: 1px 1px 0 0;
-  margin-block-start: 10px;
   margin-inline-end: 10px;
+  margin-block-start: 10px;
+  border-width: 1px 1px 0 0;
 }
 
 .decorated-zone::after {
   bottom: 0;
   left: 0;
-  border-width: 0 0 1px 1px;
-  margin-block-end: 10px;
   margin-inline-start: 10px;
+  margin-block-end: 10px;
+  border-width: 0 0 1px 1px;
 }
 
 .main {
@@ -192,7 +190,7 @@
 }
 
 .main-content_link:focus-visible {
-  border: 1px solid var(--text-color, #f1b2ce)
+  border: 1px solid var(--text-color, #f1b2ce);
 }
 
 .gallery {
@@ -201,9 +199,9 @@
 }
 
 .gallery-image {
+  object-fit: cover;
   inline-size: 100%;
   block-size: 100%;
-  object-fit: cover;
 }
 
 .footer {
@@ -220,24 +218,24 @@
   text-shadow: 2px 2px 0 var(--title_shadow-color, #ff0070);
 }
 
-@media(width >= 768px) {
+@media (width >= 768px) {
   .header {
     padding: 20px;
   }
 
   .header__rec {
-    margin-block-start: 20px;
     margin-inline-end: 29px;
+    margin-block-start: 20px;
   }
 
   .decorated-zone::before {
-    margin-block-start: 20px;
     margin-inline-end: 20px;
+    margin-block-start: 20px;
   }
-  
+
   .decorated-zone::after {
-    margin-block-end: 20px;
     margin-inline-start: 20px;
+    margin-block-end: 20px;
   }
 
   .header_text {
@@ -306,7 +304,7 @@
   }
 }
 
-@media(width >= 1024px) {
+@media (width >= 1024px) {
   .header__theme-menu {
     justify-self: center;
     align-self: start;
@@ -320,7 +318,7 @@
   .header_text {
     max-inline-size: 491px;
   }
-  
+
   .main-content_two .main-content_paragraph {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
