@@ -114,7 +114,7 @@
   content: "";
   position: absolute;
   border-style: solid;
-  border-color: var(--accent-color, #ff0070);
+  border-color: var(--main-content_title, #ff0070);
   inline-size: 25px;
   block-size: 25px;
 }
