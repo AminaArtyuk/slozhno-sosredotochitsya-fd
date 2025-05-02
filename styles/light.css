@@ -1,19 +1,18 @@
 :root.theme-light {
-  --main-font: 'IBM Plex mono', sans-serif;
-  --bg-color: #fff1f7;
-  --accept-text-color: #353430;
-  --accent-color: #ff8dcb;
-  --text-color: #353430;
-  --title-color: #ffc2e6;
-  --main-content_title: #353430;
-  --accept-bg-color: #ff8dcb;
-  --title_shadow-color: #ff8dcb;
-  --bg-image: url('../images/cover-image-light.png');
+  --bg-color: var(--bg-color-light);
+  --accept-text-color: var(--accept-text-color-light);
+  --accent-color: var(--accent-color-light);
+  --text-color: var(--text-color-light);
+  --title-color: var(--title-color-light);
+  --main-content_title: var(--main-content_title-light);
+  --accept-bg-color: var(--accept-bg-color-light);
+  --title_shadow-color: var(--title_shadow-color-light);
+  --bg-image: var(--bg-image-light);
+  --hover-color: var(--hover-color-light);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-font: 'IBM Plex mono', sans-serif;
     --bg-color: #fff1f7;
     --accept-text-color: #353430;
     --accent-color: #ff8dcb;
@@ -22,14 +21,11 @@
     --main-content_title: #353430;
     --accept-bg-color: #ff8dcb;
     --title_shadow-color: #ff8dcb;
+    --hover-color-light: rgba(50, 49, 45, 0.4);
     --bg-image: url('../images/cover-image-light.png');
   }
 }
 
 .theme-light .header__rec {
   display: none;
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid rgba(50, 49, 45, 0.4);
 }

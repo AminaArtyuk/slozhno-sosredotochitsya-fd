@@ -1,12 +1,23 @@
 :root {
-  --main-font: 'IBM Plex mono';
-  --bg-color: #000028;
-  --accept-text-color: #000028;
-  --accent-color: #ff0070;
-  --text-color: #f1b2ce;
-  --title-color: #db00ff;
-  --main-content_title: #ff0070;
-  --accept-bg-color: #ff0070;
-  --title_shadow-color: #ff0070;
-  --bg-image: url('../images/cover-image-dark.png');
+  --main-font: 'IBM Plex mono', sans-serif;
+  --bg-color-dark: #000028;
+  --bg-color-light: #fff1f7;
+  --accept-text-color-dark: #000028;
+  --accept-text-color-light: #353430;
+  --accent-color-dark: #ff0070;
+  --accent-color-light: #ff8dcb;
+  --text-color-dark: #f1b2ce;
+  --text-color-light: #353430;
+  --title-color-dark: #db00ff;
+  --title-color-light: #ffc2e6;
+  --main-content_title-dark: #ff0070;
+  --main-content_title-light: #353430;
+  --accept-bg-color-dark: #ff0070;
+  --accept-bg-color-light: #ff8dcb;
+  --title_shadow-color-dark: #ff0070;
+  --title_shadow-color-light: #ff8dcb;
+  --hover-color-dark: rgba(255, 0, 112, 0.4);
+  --hover-color-light: rgba(50, 49, 45, 0.4);
+  --bg-image-dark: url('../images/cover-image-dark.png');
+  --bg-image-light: url('../images/cover-image-light.png');
 }
